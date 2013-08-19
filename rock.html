@@ -1,0 +1,53 @@
+<head>
+  <title>rock_paper_scissors</title>
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+ </head>
+
+<body>
+  {{> rock}}
+</body>
+
+
+<template name="rock">
+U+e009
+<h2>
+  <i class="icon-cut"></i> icon-camera-retro
+</h2>
+<h2 id="stats">
+  <span aria-hidden="true" data-icon="&#x21dd;"></span>
+  Stats
+</h2>
+
+<a href="#" class="icon-alone">
+  <span aria-hidden="true" data-icon="&#x25a8;"></span>
+  <span class="screen-reader-text">RSS</span>
+</a>
+
+<span aria-hidden="true" data-icon="&#x21dd;"></span>
+  <h1>Rock Paper Scissors</h1>
+  <p>
+    {{greeting}}  
+  </p>
+  <p>
+    {{invite}}
+  </p>
+
+
+  
+  <div >
+  <input id='rock-btn' type="button" value="rock" data-num='0' />
+   <input id='paper-btn' type="button" value="paper" data-num='1'/>
+    <input id='scissors-btn' type="button" value="scissors" data-num='2'/>
+    </div>
+    <p> This is your choice:
+    <p>{{display}}</p>
+    <p>This is Ai choice:</p>
+    <p>{{aiOutput}} </p>
+
+    <p>Result: </p>
+
+    <div id='displayWinner'>
+    <p>{{displayWinner}}<p>
+    </div>
+
+</template>
