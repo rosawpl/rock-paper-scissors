@@ -23,20 +23,3 @@ h1 {
 	width: 100px;
 }
 
-[data-icon]:before {
-  font-family: icons; /* BYO icon font, mapped smartly */
-  content: attr(data-icon);
-  speak: none; /* Not to be trusted, but hey. */
-  color: rgb(209, 46, 46);
-  font-size: 47px;
-}
-
-.icon-alone {
-  display: inline-block; /* Chrome 19 was weird with clickability without this */
-}
-
-.screen-reader-text { /* Reusable, toolbox kind of class */
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
